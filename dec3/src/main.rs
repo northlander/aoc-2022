@@ -13,7 +13,6 @@ fn main() {
             let (left, right) = l.split_at(l.len()/2);
             let equal_char: Vec<char> = left
                 .chars()
-                .into_iter()
                 .filter(|c| right.contains(*c))
                 .collect();
            
